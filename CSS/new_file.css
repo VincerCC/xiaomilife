@@ -52,11 +52,6 @@
   	font-family: sans-serif;
   	margin: 0.5em;/*0.5个字体大小*/
   }
-  
-  
-  .topbar .container .topbar-cart{
-  	position: relative;
-  }
 .topbar .container .topbar-cart a{
 	display: block;
 	height: 40px;
@@ -64,6 +59,15 @@
 	text-align: center;
 	background-color: #424242;
 	width: 120px;
+}
+.topbar .container .topbar-cart i{
+margin: 5px;
+vertical-align: -2px;
+}
+.topbar .container .topbar-cart .a-hover{
+	background-color: #fff;
+	color: #FF6700;
+	
 }
 .topbar .container .topbar-cart-page-hide{
 	display: none;
@@ -129,21 +133,12 @@
 	color: #fff;
 	cursor: pointer;
 }
-.topbar .container .topbar-cart i{
-margin: 5px;
-vertical-align: -2px;
-}
-.topbar .container .topbar-cart a:hover{
-	background-color: #fff;
-	color: #FF6700;
-}
 .topbar .container .topbar-info a{
 	
 	padding: 0 5px;
 	height: 40px;
 	line-height: 40px;
 }
-
 .topbar .container .topbar-info span{
 	
 	font-family: sans-serif;
@@ -185,7 +180,7 @@ vertical-align: -2px;
 	display: block;
 	height: 53px;
 	widows: 53px;
-	background-image: url(../image/TB.jpg);
+	background-image: url(../image/xiaomi.png);
 	background-repeat: no-repeat;
 }
 .header-nav ul{
@@ -254,7 +249,7 @@ vertical-align: -2px;
 .seckill-head{
 	height: 170px;
 	margin-top: 20px;
-	background-image: url(../image/miaosha.jpg);
+	background-image: url(../image/xiaomimiaosha.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -523,7 +518,7 @@ vertical-align: -2px;
 	width: 53px;
 	height: 119px;
 	background-repeat: no-repeat;
-	background-image: url(../image/TB.jpg);
+	background-image: url(../image/xiaomi.png);
 }
 .footInfo .texta{
 	height: 19px;
