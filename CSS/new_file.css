@@ -52,6 +52,11 @@
   	font-family: sans-serif;
   	margin: 0.5em;/*0.5个字体大小*/
   }
+  
+  
+  .topbar .container .topbar-cart{
+  	position: relative;
+  }
 .topbar .container .topbar-cart a{
 	display: block;
 	height: 40px;
@@ -59,6 +64,70 @@
 	text-align: center;
 	background-color: #424242;
 	width: 120px;
+}
+.topbar .container .topbar-cart-page-hide{
+	display: none;
+}
+.topbar .container .topbar-cart-page{
+	display: block;
+	position: absolute;
+    left: 1055px;
+    top: 40px;
+    z-index: 1;
+    width: 316px;
+    padding: 15px 0 0;
+    color: #424242;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);  
+}
+
+.topbar .container .topbar-cart-page .topbar-cart-page-con{
+	width: 316px;
+	
+}
+.topbar .container .topbar-cart-page .topbar-cart-page-con img{
+	width: 60px;
+	height: 60px;
+}
+.topbar .container .topbar-cart-page .topbar-cart-page-con ul li{
+	list-style-type:none; 
+	padding: 0 15px;
+}
+.topbar .container .topbar-cart-page .topbar-cart-page-con .topbar-cart-page-con-text{
+	float: right;
+	width: 216px;
+	height: 60px;
+}
+.topbar .container .topbar-cart-page .topbar-cart-page-con ul li .topbar-cart-page-con-text a{
+	display: block;
+	width: 130px;
+	height: 60px;
+	float: left;
+	list-style-type:none; 
+	color: #000000;
+	line-height: 60px;
+	white-space: nowrap;/*取消自动换行*/
+	overflow: hidden;/*隐藏超出部分*/
+	text-overflow: ellipsis;/*超出部分设置为.*/
+}
+.topbar .container .topbar-cart-page .topbar-cart-page-con .topbar-cart-page-con-text .topbar-cart-page-money{
+	widows: 60px;
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	font-size: 12px;
+	color: #FF5500;
+}
+.topbar .container .topbar-cart-page .topbar-cart-page-buy{
+	margin-top: 5px;
+	height: 40px;
+	background-color:#FF5500 ;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
 }
 .topbar .container .topbar-cart i{
 margin: 5px;
@@ -74,6 +143,7 @@ vertical-align: -2px;
 	height: 40px;
 	line-height: 40px;
 }
+
 .topbar .container .topbar-info span{
 	
 	font-family: sans-serif;
@@ -115,7 +185,7 @@ vertical-align: -2px;
 	display: block;
 	height: 53px;
 	widows: 53px;
-	background-image: url(../image/xiaomi.png);
+	background-image: url(../image/TB.jpg);
 	background-repeat: no-repeat;
 }
 .header-nav ul{
@@ -184,7 +254,7 @@ vertical-align: -2px;
 .seckill-head{
 	height: 170px;
 	margin-top: 20px;
-	background-image: url(../image/xiaomimiaosha.jpg);
+	background-image: url(../image/miaosha.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -453,7 +523,7 @@ vertical-align: -2px;
 	width: 53px;
 	height: 119px;
 	background-repeat: no-repeat;
-	background-image: url(../image/xiaomi.png);
+	background-image: url(../image/TB.jpg);
 }
 .footInfo .texta{
 	height: 19px;
