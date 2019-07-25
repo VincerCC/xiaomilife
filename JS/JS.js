@@ -18,7 +18,7 @@ window.onload=function(){
 			}
 		};
 	}
-
+	
 	//	添加 购物车
 	var btn=document.querySelectorAll(".seckill .container .seckill-goods .seckill-info .btn");
 	for(var i=0;i<btn.length;i++){
@@ -61,18 +61,23 @@ window.onload=function(){
 	var page=document.getElementById("topbar-cart-page");
 	cart[0].onmouseover=function(){
 	page.className="topbar-cart-page";
+	cart[0].children[0].className="a-hover";
 	}
 	cart[0].onmouseout=function(){
 	page.className="topbar-cart-page-hide";
+	cart[0].children[0].className="";
 	}
 	page.onmouseover=function(){
 	page.className="topbar-cart-page";
+	cart[0].children[0].className="a-hover";
 	}
 	page.onmouseout=function(){
 	page.className="topbar-cart-page-hide";
+	cart[0].children[0].className="";
 	}
 	
 	
+
 window.onscroll=function(){
 		var scroll=document.documentElement.scrollTop||/*（解决兼容性问题）*/document.body.scrollTop;;//263
 		if(scroll>260){
