@@ -19,6 +19,60 @@ window.onload=function(){
 		};
 	}
 
+	//	添加 购物车
+	var btn=document.querySelectorAll(".seckill .container .seckill-goods .seckill-info .btn");
+	for(var i=0;i<btn.length;i++){
+		
+		btn[i].onclick=function(){
+			var imgsrc=this.parentNode.previousElementSibling.firstElementChild.src;
+			var name=this.parentNode.children[0].innerHTML;
+			var money=this.parentNode.children[2].children[0].innerText;
+			
+			var li=document.createElement("li");
+			var img=document.createElement("img");
+			img.setAttribute('src',imgsrc);
+			
+			var div=document.createElement("div");
+			div.className="topbar-cart-page-con-text  clearfix"
+			
+			var a=document.createElement("a");
+			a.className="topbar-cart-page-name"
+			a.setAttribute('href','#');
+			a.innerText=name;
+			
+			var p=document.createElement("p");
+			p.className="topbar-cart-page-money"
+			p.innerText=money;
+			
+			div.appendChild(a);
+			div.appendChild(p);
+			
+			
+			li.appendChild(img);
+			li.appendChild(div);
+			
+			var ul=document.getElementById("topbar-cart-page-con-ul");
+			ul.appendChild(li)
+		}
+	}
+	
+	//鼠标滑入显示，滑出隐藏
+	var cart=document.getElementsByClassName("topbar-cart");
+	var page=document.getElementById("topbar-cart-page");
+	cart[0].onmouseover=function(){
+	page.className="topbar-cart-page";
+	}
+	cart[0].onmouseout=function(){
+	page.className="topbar-cart-page-hide";
+	}
+	page.onmouseover=function(){
+	page.className="topbar-cart-page";
+	}
+	page.onmouseout=function(){
+	page.className="topbar-cart-page-hide";
+	}
+	
+	
 window.onscroll=function(){
 		var scroll=document.documentElement.scrollTop||/*（解决兼容性问题）*/document.body.scrollTop;;//263
 		if(scroll>260){
